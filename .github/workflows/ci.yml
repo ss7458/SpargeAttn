@@ -36,7 +36,7 @@ jobs:
           python setup.py bdist_wheel  # 使用 setuptools 来构建 .whl 文件
 
       - name: Upload Wheel file as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: spargeattn-wheel
           path: dist/*.whl  # 上传构建好的 .whl 文件
