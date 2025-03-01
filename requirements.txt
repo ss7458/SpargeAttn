@@ -1,2 +1,5 @@
 packaging
-torch
+
+setuptools>=50.0.0
+torch==2.6.0+cu124  # 根据您的项目需求选择合适的版本和 CUDA 支持
+packaging>=20.0
