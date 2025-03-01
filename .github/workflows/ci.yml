@@ -27,9 +27,9 @@ jobs:
         run: |
           choco install visualstudio2019buildtools
 
-      - name: Install other dependencies
-        run: |
-          pip install -r requirements.txt  # 如果你有其他依赖的话
+      # - name: Install other dependencies
+      #   run: |
+      #     pip install -r requirements.txt  # 如果你有其他依赖的话
 
       - name: Build Wheel
         run: |
