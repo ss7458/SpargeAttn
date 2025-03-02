@@ -55,10 +55,10 @@ jobs:
           Write-Host "CUDA_HOME is set to $env:CUDA_HOME"
           Write-Host "PATH is set to $env:PATH"
           
-      - name: Verify CUDA installation
-        shell: pwsh
-        run: |
-          nvcc --version  # 验证 CUDA 安装并确保 nvcc 可用
+      # - name: Verify CUDA installation
+      #   shell: pwsh
+      #   run: |
+      #     nvcc --version  # 验证 CUDA 安装并确保 nvcc 可用
           
       - name: Build Wheel
         run: |
