@@ -42,9 +42,9 @@ jobs:
           
       - name: Set CUDA environment variables
         run: |
-          set CUDA_HOME=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6  # 修改为你的 CUDA 路径
-          set PATH=%CUDA_HOME%\bin;%PATH%
-          set LIBRARY_PATH=%CUDA_HOME%\libnvvp;%LIBRARY_PATH%
+          setx  CUDA_HOME=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6  # 修改为你的 CUDA 路径
+          setx  PATH=%CUDA_HOME%\bin;%PATH%
+          setx  LIBRARY_PATH=%CUDA_HOME%\libnvvp;%LIBRARY_PATH%
           
 
           
