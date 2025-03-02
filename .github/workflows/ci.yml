@@ -38,14 +38,14 @@ jobs:
           #pip install torch==2.6.0 
           # +cu124 -f https://download.pytorch.org/whl/torch_stable.html
           pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
-          nvcc --version
+
           
       - name: Set CUDA environment variables
         run: |
           setx  CUDA_HOME=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6  # 修改为你的 CUDA 路径
           setx  PATH=%CUDA_HOME%\bin;%PATH%
           setx  LIBRARY_PATH=%CUDA_HOME%\libnvvp;%LIBRARY_PATH%
-          
+          nvcc --version         
 
           
       - name: Build Wheel
